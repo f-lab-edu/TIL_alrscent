@@ -28,7 +28,7 @@ public class SemaphoreForReservationTest {
                         maxConcurrent.updateAndGet(max -> Math.max(max, currentCount));
 
                         // 예약 처리
-                        Thread.sleep(100);
+                        Thread.sleep(1000);
                     }
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
