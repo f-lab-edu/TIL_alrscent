@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * Mutex 예제
  */
 public class Mutex {
-    private final ReentrantLock lock = new ReentrantLock();
+    private final ReentrantLock lock = new ReentrantLock(true);
     private final AtomicInteger inThreadCount = new AtomicInteger(0);
     private final AtomicInteger violation = new AtomicInteger(0);
 

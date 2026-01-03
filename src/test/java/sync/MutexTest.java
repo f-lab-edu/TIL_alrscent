@@ -10,8 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class MutexTest {
 
     @Test
-    @DisplayName("여러 스레드가 동시에 접근해도 상호 배제가 보장되어야 한다")
-    public void test() throws InterruptedException {
+    @DisplayName("여러 스레드가 동시에 접근해도 상호 배제가 보장된다")
+    public void mutualExclusionTest() throws InterruptedException {
         int threadCount = 10;
         int iterationsPerThread = 50;
         Mutex mutex = new Mutex();
